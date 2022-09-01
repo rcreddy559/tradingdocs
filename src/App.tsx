@@ -1,15 +1,17 @@
 import React from 'react';
 import './App.css'
-import Nav from './components/nav/Nav';
+import DocsBody from './components/body/DocsBody';
+
 import { TradingDocsContext } from './components/hooks/context/TradingDocsProvider';
 import { useTradingDocs } from './components/hooks/useTradingDocs';
-import { DocsDashboard } from './components/body/DocsDashboard';
+import Nav from './components/nav/Nav';
 
 function App() {
   const state = useTradingDocs();
   return (<TradingDocsContext.Provider value={state}>
-          <DocsDashboard />
-    </TradingDocsContext.Provider>
+    <Nav />
+    <DocsBody />
+  </TradingDocsContext.Provider>
   );
 }
 
