@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div className="docs-container">
+    <div className="uk-container">
       <App />
     </div>
   </React.StrictMode>

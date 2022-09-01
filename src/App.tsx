@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css'
-import DocsBody from './components/body/DocsBody';
+import DocsBody from './components/content/DocsBody';
 
 import { TradingDocsContext } from './components/hooks/context/TradingDocsProvider';
 import { useTradingDocs } from './components/hooks/useTradingDocs';
