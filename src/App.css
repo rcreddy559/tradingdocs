@@ -42,3 +42,8 @@
     transform: rotate(360deg);
   }
 }
+
+
+ul.imp-points {
+  list-style-type: square;
+}
