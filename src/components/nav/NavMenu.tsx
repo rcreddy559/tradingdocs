@@ -5,7 +5,7 @@ import { HOME_PAGE, HAMMER_PATTERN_PAGE } from '../util/Constants';
 import {NavDropdown} from './NavDropdown';
 import NavLogo from './NavLogo';
 
-function Nav() {
+function NavMenu() {
   const navLinks: NavItemLinks[] = [
     {name: "Hammer Pattern", link:"link-1", page: HAMMER_PATTERN_PAGE},
     {name: "Name-2 uk-active", link:"link-2", page: HOME_PAGE},
@@ -17,13 +17,11 @@ function Nav() {
     <nav className="uk-navbar-container">
       <div className="uk-navbar">
         <div className="uk-navbar-left">
-          <img src='./logo192.png' width="50px" />
-            <NavLogo />
-          <input className="uk-input uk-form-width-large" type="text" placeholder="Search" />
+          <NavDropdown name='Candles Stick Patterns' links={navLinks}/>
         </div>
       </div>
     </nav>
   );
 }
 
-export default Nav;
+export default NavMenu;
